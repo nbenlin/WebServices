@@ -1,0 +1,19 @@
+{
+  "name": "web-services",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbenlin/WebServices.git"
+  },
+  "author": "23227",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/nbenlin/WebServices/issues"
+  },
+  "homepage": "https://github.com/nbenlin/WebServices#readme"
+}
