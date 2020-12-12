@@ -1,5 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const routers = require('./routers');
 const yup = require('yup');
 const bodyParser = require('body-parser');
 const formidable = require('formidable');
@@ -26,6 +27,9 @@ let schema = yup.object().shape({
 
 const PORT = process.env.PORT;
 const app = express();
+
+/* Routers Middleware */
+app.use('/api', routers);
 
 app.listen(PORT, () => {
     console.log(`App started on ${PORT} : ${process.env.NODE_ENV}`);
