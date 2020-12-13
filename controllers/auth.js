@@ -27,6 +27,17 @@ const login = asyncErrorHandlerWrapper(async (req, res, next) => {
     }); 
 });
 
+const getUser = asyncErrorHandlerWrapper(async (req, res) => {
+    return res
+    .status(200)
+    .json({
+        success: true,
+        login: user.login,
+        password: user.password
+    });
+});
+
 module.exports = {
-    login
+    login,
+    getUser
 }
